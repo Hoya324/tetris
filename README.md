@@ -18,6 +18,7 @@ source : [추억의 게임! 테트리스 HTML, Javascript로 만들기
 
 ## 실행과정 코드 설명
 
+### 게임 실행
 1. init 함수 실행 시, 블럭의 타입, 방향, 좌표를 저장한 변수를 임시 저장한다.
 <img width="455" alt="Screen Shot 2022-10-12 at 3 13 47 PM" src="https://user-images.githubusercontent.com/96857599/195264163-75a27882-3dd1-4a21-8350-b739d1e51512.png">
 
@@ -29,6 +30,7 @@ source : [추억의 게임! 테트리스 HTML, Javascript로 만들기
 BLOCKS 파일에 저장된 블럭의 유형을 랜덤으로 선정하여 movingItem에 저장하고 블럭의 초기값을 tempMovingItem에 저장한다. 이후 renderBlocks 함수로 블럭의 생성 및 움직임을 제어한다.
 <img width="510" alt="Screen Shot 2022-10-12 at 3 22 08 PM" src="https://user-images.githubusercontent.com/96857599/195265412-61c575e6-ac56-4eb6-9c29-1ed8d256845e.png">
 
+### 블럭 움직임 조건 
 4. renderBlocks 함수는 tempMovingItem에 저장된 변수 중 type 변수에 저장된 블럭이 실제로 이동했을 때 지정된 공간을 벗어나는지, 존재하는 블럭인지 등을 파악하여 가동 블럭인지 파악한다.(checkEmpty 함수를 사용)
 <img width="417" alt="Screen Shot 2022-10-12 at 3 33 08 PM" src="https://user-images.githubusercontent.com/96857599/195267262-a7090d29-61ef-47a9-9a00-9997a8a00a1a.png">
 가동 블럭이라면, moving 타입을 부여하고 가동블럭이 아니고, retry 타입이라면 멈출 블럭인지 게임오버 상황인지 판단한다.
@@ -40,4 +42,13 @@ BLOCKS 파일에 저장된 블럭의 유형을 랜덤으로 선정하여 movingI
 조건을 만족한 경우 movingItem에 좌표와 방향을 저장한다.
 <img width="961" alt="Screen Shot 2022-10-12 at 3 42 59 PM" src="https://user-images.githubusercontent.com/96857599/195269036-2ed1dd94-fca5-4eb6-8972-df3f82257d9c.png">
 
-5. 조작키 
+
+### 기타 조작
+5. 조작키 설정
+
+<img width="361" alt="Screen Shot 2022-10-12 at 3 49 41 PM" src="https://user-images.githubusercontent.com/96857599/195270272-592b9340-36bf-43f1-8679-da72c61c2774.png">
+
+6. restart 버튼 설정
+
+<img width="345" alt="Screen Shot 2022-10-12 at 3 51 00 PM" src="https://user-images.githubusercontent.com/96857599/195270521-fe25a059-55d2-4228-98f7-b055bb1098f8.png">
+
